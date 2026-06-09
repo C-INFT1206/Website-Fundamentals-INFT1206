@@ -5,17 +5,12 @@
 
 <!--
 Name: Cordell C.T.
-File: Assignment 2 - Part 1
+File: Assignment 2 - PArt 1
 INFT1206 – Web Development Fundamentals
 Date: 08 June 2026
 Creepy-crawlies splash page assignment.
 -->
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Creepy crawlies!</title>
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
@@ -32,6 +27,12 @@ Creepy-crawlies splash page assignment.
       </nav>
       <section>
         <h1>Creepy-crawlies splash page!</h1>
+<video
+src="https://mdn.github.io/shared-assets/videos/learn/bug_video_640.mp4"
+autoplay
+loop
+muted
+preload="auto"></video>
 
         <p>
           In casual language, people use "bugs" to mean all sorts of small
