@@ -5,7 +5,16 @@
   Description: Styles the St Huxley's Community College homepage.
 */
 
+/* Import the fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto+Slab:wght@600;700&display=swap");
+
 /* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
 
 * {
   box-sizing: border-box;
