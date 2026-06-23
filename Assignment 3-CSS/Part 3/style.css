@@ -38,20 +38,31 @@ img {
 }
 
 nav {
-  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 10;
   padding: 0.5em;
+  background-color: black;
 }
 
 nav ul {
+  display: flex;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 nav a {
+  display: block;
+  padding: 0.5em 1em;
   color: white;
   text-decoration: none;
-  padding: 0.5em 1em;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #444444;
 }
 
 .photos {
