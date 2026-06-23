@@ -1,0 +1,15 @@
+/*
+  Name: Cordell C.T.
+  File: styling-a-biography-page.css
+  Date: DD Month YYYY
+  Description: Styles for the Jane Doe biography page.
+*/
+
+
+html {
+  background-color: white;
+}
+
+body {
+  font: 1.2em / 1.5 system-ui;
+}
