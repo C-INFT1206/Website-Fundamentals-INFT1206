@@ -25,3 +25,8 @@ h2 {
   font-size: 1.5rem;
   font-style: italic;
 }
+ul {
+  padding: 30px;
+  background-color: white;
+  border: 5px solid purple;
+  border-radius: 20px;
