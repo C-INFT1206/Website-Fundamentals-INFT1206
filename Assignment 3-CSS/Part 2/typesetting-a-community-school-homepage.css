@@ -1,8 +1,8 @@
 /*
-  Name: Cordell C.T.
-  File: typesetting-a-community-school-homepage.css
-  Date: 22nd June 2026
-  Description: Styles the St Huxley's Community College homepage.
+Name: Cordell C.T.
+File: typesetting-a-community-school-homepage.css
+Date: 22nd June 2026
+Description: Styles the St Huxley's Community College homepage.
 */
 
 /* Import the fonts */
@@ -12,48 +12,48 @@
 /* General setup */
 
 * {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 
 
 * {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 html {
-  font-family: "Merriweather", Georgia, serif;
-  font-size: 100%;
-  
+font-family: "Merriweather", Georgia, serif;
+font-size: 100%;
+
 body {
-  margin: 0 auto;
-  padding: 0 20px;
-  min-width: 980px;
-  max-width: 1400px;
- color: #333333;
-  line-height: 1.6;
-  letter-spacing: 0.02rem;
+margin: 0 auto;
+padding: 0 20px;
+min-width: 980px;
+max-width: 1400px;
+color: #333333;
+line-height: 1.6;
+letter-spacing: 0.02rem;
 }
 
 /* Layout */
 
 main {
-  display: grid;
-  grid-template-columns: 5fr 2fr 2fr;
-  gap: 40px;
-  padding: 20px 0;
+display: grid;
+grid-template-columns: 5fr 2fr 2fr;
+gap: 40px;
+padding: 20px 0;
 }
 
 /* header and footer */
 
 header {
-  border-bottom: 5px solid #aa6666;
+border-bottom: 5px solid #aa6666;
 }
 
 footer {
-  border-top: 5px solid #aa6666;
+border-top: 5px solid #aa6666;
 }
 
 footer p {
-  text-align: center;
+text-align: center;
 }
 
 /* Heading styles */
@@ -61,36 +61,57 @@ footer p {
 h1,
 h2,
 nav a {
-  font-family: "Roboto Slab", Rockwell, serif;
+font-family: "Roboto Slab", Rockwell, serif;
 }
 h1 {
-  font-size: 3rem;
-  text-align: center;
-  letter-spacing: 0.15rem;  
+font-size: 3rem;
+text-align: center;
+letter-spacing: 0.15rem;  
 }
 h2 {
-  margin-bottom: 0;
-  font-size: 2rem;
-  letter-spacing: 0.08rem;
+margin-bottom: 0;
+font-size: 2rem;
+letter-spacing: 0.08rem;
 }
-  
+
 /* Indent the first paragraph after each section heading */
 
 section h2 + p {
-  text-indent: 2rem;
+text-indent: 2rem;
 }
-  
+
 /* Paragraph and list spacing */
-  
+
 p,
 ul,
 ol {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+margin-top: 1rem;
+margin-bottom: 1rem;
 }
 p,
 li {
-  line-height: 1.6;
-  letter-spacing: 0.02rem;
+line-height: 1.6;
+letter-spacing: 0.02rem;
+}
+
+/* Link styling */
+
+a {
+color: #994f4f;
+text-decoration: underline;
+outline: none;
+}
+
+a:visited {
+color: #704060;
+}
+a:hover,
+a:focus {
+color: #773333;
+text-decoration: none;
+}
+
+a:focus-visible {
+box-shadow: 0 0 0 3px rgba(170, 102, 102, 0.4);
 }
 
