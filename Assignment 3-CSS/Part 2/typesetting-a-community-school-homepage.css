@@ -19,7 +19,9 @@
 * {
   box-sizing: border-box;
 }
-
+html {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 100%;
 body {
   margin: 0 auto;
   padding: 0 20px;
