@@ -30,3 +30,6 @@ ul {
   background-color: white;
   border: 5px solid purple;
   border-radius: 20px;
+a {
+  color: green;
+}
