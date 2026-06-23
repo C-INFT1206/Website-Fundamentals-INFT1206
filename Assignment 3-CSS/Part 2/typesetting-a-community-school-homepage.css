@@ -22,11 +22,15 @@
 html {
   font-family: "Merriweather", Georgia, serif;
   font-size: 100%;
+  
 body {
   margin: 0 auto;
   padding: 0 20px;
   min-width: 980px;
   max-width: 1400px;
+ color: #333333;
+  line-height: 1.6;
+  letter-spacing: 0.02rem;
 }
 
 /* Layout */
