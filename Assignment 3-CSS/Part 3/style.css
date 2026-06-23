@@ -23,15 +23,18 @@ img {
 }
 
 .logo {
-  font-size: 200%;
-  padding: 50px 20px;
-  margin: 0 auto;
   max-width: 980px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  font-size: 200%;
 }
 
 .grid {
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
   max-width: 980px;
+  margin: 0 auto;
 }
 
 nav {
@@ -60,3 +63,14 @@ nav a {
 .feature {
   width: 200px;
 }
+
+
+
+
+
+
+
+
+
+
+
