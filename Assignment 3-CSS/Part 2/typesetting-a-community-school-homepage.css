@@ -73,3 +73,24 @@ h2 {
   font-size: 2rem;
   letter-spacing: 0.08rem;
 }
+  
+/* Indent the first paragraph after each section heading */
+
+section h2 + p {
+  text-indent: 2rem;
+}
+  
+/* Paragraph and list spacing */
+  
+p,
+ul,
+ol {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+p,
+li {
+  line-height: 1.6;
+  letter-spacing: 0.02rem;
+}
+
