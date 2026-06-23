@@ -1,79 +1,80 @@
 /*
-  Name: Cordell C.T.
-  File: style.css
-  Date: 22nd June 2026
-  Description: Layout styles for the fundamental layout challenge.
+Name: Cordell C.T.
+File: style.css
+Date: 22nd June 2026
+Description: Layout styles for the fundamental layout challenge.
 */
 
 * {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 
 body {
-  background-color: white;
-  color: #333333;
-  margin: 0;
-  font: 1.2em / 1.6 sans-serif;
+background-color: white;
+color: #333333;
+margin: 0;
+font: 1.2em / 1.6 sans-serif;
 }
 
 img {
-  max-width: 100%;
-  display: block;
-  border: 1px solid black;
+max-width: 100%;
+display: block;
+border: 1px solid black;
 }
 
 .logo {
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 50px 20px;
-  font-size: 200%;
+max-width: 980px;
+margin: 0 auto;
+padding: 50px 20px;
+font-size: 200%;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 20px;
-  max-width: 980px;
-  margin: 0 auto;
+display: grid;
+grid-template-columns: 3fr 1fr;
+gap: 20px;
+max-width: 980px;
+margin: 0 auto;
 }
 
 nav {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  padding: 0.5em;
-  background-color: black;
+position: sticky;
+top: 0;
+z-index: 10;
+padding: 0.5em;
+background-color: black;
 }
 
 nav ul {
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+display: flex;
+justify-content: space-around;
+margin: 0;
+padding: 0;
+list-style: none;
 }
 
 nav a {
-  display: block;
-  padding: 0.5em 1em;
-  color: white;
-  text-decoration: none;
+display: block;
+padding: 0.5em 1em;
+color: white;
+text-decoration: none;
 }
 
 nav a:hover,
 nav a:focus {
-  background-color: #444444;
+background-color: #444444;
 }
 
 .photos {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 5px;
+margin: 0;
+padding: 0;
+list-style: none;
 }
 
-.feature {
-  width: 200px;
-}
+
 
 
 
