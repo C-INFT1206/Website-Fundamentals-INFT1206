@@ -1,40 +1,40 @@
 /*
-  Name: Cordell C.T.
-  File: styling-a-biography-page.css
-  Date: 22nd June 2026
-  Description: Styles for the Jane Doe biography page.
+Name: Cordell C.T.
+File: styling-a-biography-page.css
+Date: 22nd June 2026
+Description: Styles for the Jane Doe biography page.
 */
 
 
 html {
-  background-color: white;
+background-color: white;
 }
 body {
-  width: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #efefef;
-  font: 1.2em / 1.5 system-ui;
+width: 500px;
+margin: 0 auto;
+padding: 20px;
+background-color: #efefef;
+font: 1.2em / 1.5 system-ui;
 }
 h1 {
-  color: darkslategray;
-  border-bottom: 10px dotted purple;
-  font-size: 2rem;
+color: darkslategray;
+border-bottom: 10px dotted purple;
+font-size: 2rem;
 }
 h2 {
-  font-size: 1.5rem;
-  font-style: italic;
+font-size: 1.5rem;
+font-style: italic;
 }
 ul {
-  padding: 30px;
-  background-color: white;
-  border: 5px solid purple;
-  border-radius: 20px;
+padding: 30px;
+background-color: white;
+border: 5px solid purple;
+border-radius: 20px;
 a {
-  color: green;
+color: green;
 }
 a:hover,
 a:focus {
-  color: darkgreen;
-  text-decoration: none;
+color: darkgreen;
+text-decoration: none;
 }
