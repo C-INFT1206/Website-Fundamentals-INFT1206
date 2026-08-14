@@ -1,9 +1,9 @@
-<!--
-Name: C
-File: index.html
+/*
+Name: C-INFT1206
+File: style.css
 Date: 13 August 2026
-Style for Assingment 5
--->
+Styles for the bears.
+*/
 
 html, body {
   margin: 0;
@@ -57,7 +57,7 @@ p, li, table {
 /* || header layout */
 
 div[class="nav"], article, footer, .secondary {
-  background-color: green;
+  background-color: #a9e6a9;
 }
 
 article, footer, .secondary {
@@ -70,7 +70,7 @@ article {
 
 div[class="nav"] {
   height: 50px;
-  background-color: ff80ff;
+  background-color: #ff80ff;
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
