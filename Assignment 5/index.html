@@ -34,7 +34,7 @@ Silly the bear
 </ul>
 
 <form class="search">
-<input type="search" name="q" placeholder="Search query">
+<input type="search" name="q" placeholder="Search query" aria-label="Search through site content">
 <input type="submit" value="Go!">
 </form>
 </nav>
@@ -102,10 +102,17 @@ Bears are romantic creatures by nature, and will naturally look for a mate that 
 The following audio clip contains a fact file providing more details about bear mating rituals, along with samples and quotes from experts.
 <br><br>
 <audio controls>
-<source src="media/bear.mp3" type="audio/mp3">
+<source src="media/bear.mp3" type="audio/mpeg">
 <source src="media/bear.ogg" type="audio/ogg">
-<p>It looks like your browser doesn't support HTML5 audio players.</p>
+<p>
+Your browser does not support HTML5 audio.
+<a href="media/bear.mp3">Download the bear audio file</a>.
+</p>
 </audio>
+
+<p>
+<a href="bear-transcript.html">Read the audio transcript</a>
+</p>
 
 <aside>
 
@@ -117,7 +124,7 @@ He has never seen a bear, but once read a Daily Mail article about them, and thi
 
 </aside>
 <section class="comments">
-<div class="show-hide">Show comments</div>
+<button class="show-hide" type="button">Show comments</button>
 
 <div class="comment-wrapper">
 
@@ -125,11 +132,12 @@ He has never seen a bear, but once read a Daily Mail article about them, and thi
 
 <form class="comment-form">
 <div class="flex-pair">
-  Your name:
+  <label for="name">Your name:</label>
   <input type="text" name="name" id="name" placeholder="Enter your name">
 </div>
+
 <div class="flex-pair">
-  Your comment:
+  <label for="comment">Your comment:</label>
   <input type="text" name="comment" id="comment" placeholder="Enter your comment">
 </div>
 <div>
