@@ -1,8 +1,9 @@
-//
-Name: C-INFT 1206
-File: index.html
+/*
+Name: C-INFT
+File: main.js
 Date: 13 August 2026
-Silly the bear java
+JavaScript for bears.
+*/
 
 // functionality for showing/hiding the comments section
 
