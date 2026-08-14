@@ -1,3 +1,9 @@
+//
+Name: C-INFT 1206
+File: index.html
+Date: 13 August 2026
+Silly the bear java
+
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
