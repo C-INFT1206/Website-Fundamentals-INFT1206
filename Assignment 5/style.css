@@ -1,11 +1,15 @@
 /*
-Name: C-INFT1206
-File: style.css
+Name: C
+File: index.html
 Date: 13 August 2026
-Styles for the bears.
+Demonstrates accessibility 
 */
 
-html, body {
+
+/* || General setup */
+
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -17,50 +21,62 @@ html {
 
 body {
   width: 80%;
-  min-width: 1024px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-/* || typography */
+/* || Typography */
 
-font[size="7"], font[size="6"], font[size="5"] {
-  font-family: 'Sonsie One', cursive;
+h1,
+h2,
+h3 {
+  font-family: "Sonsie One", cursive;
   color: #2a2a2a;
 }
 
-p, input, li, table, label {
-  font-family: 'Open Sans Condensed', sans-serif;
+p,
+input,
+button,
+li,
+table,
+label {
+  font-family: "Open Sans Condensed", sans-serif;
   color: #2a2a2a;
 }
 
-font[size="7"] {
+h1 {
   font-size: 4rem;
   text-align: center;
-  color: white;
-  text-shadow: 2px 2px 10px black;
 }
 
-font[size="6"] {
+h2 {
   font-size: 3rem;
   text-align: center;
 }
 
-font[size="5"] {
+h3 {
   font-size: 2.2rem;
 }
 
-p, li, table {
+p,
+li,
+table {
   font-size: 1.6rem;
   line-height: 1.5;
 }
 
-/* || header layout */
+/* || Header and navigation layout */
 
-nav, article, footer, .secondary {
-  background-color: #a9e6a9;
+nav,
+article,
+footer,
+.secondary {
+  background-color: white;
 }
 
-article, footer, .secondary {
+article,
+footer,
+.secondary {
   padding: 10px 30px;
 }
 
@@ -68,9 +84,8 @@ article {
   margin-right: 10px;
 }
 
-nav{
-  height: 50px;
-  background-color: #ff80ff;
+nav {
+  min-height: 50px;
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
@@ -83,13 +98,13 @@ nav ul {
   display: flex;
 }
 
-nav, li {
+nav li {
   display: inline;
   text-align: center;
   flex: 1;
 }
 
-nav, a {
+nav a {
   display: inline-block;
   font-size: 2rem;
   text-transform: uppercase;
@@ -101,7 +116,7 @@ nav .search {
   flex: 1;
   display: flex;
   align-items: center;
-  height: 100%;
+  min-height: 50px;
   padding: 0 2em;
 }
 
@@ -117,12 +132,12 @@ nav .search {
 .search input[type="submit"] {
   flex: 1;
   margin-left: 1rem;
-  background: #333;
+  background-color: #333;
   border: 0;
   color: white;
 }
 
-/* || main layout */
+/* || Main layout */
 
 main {
   display: flex;
@@ -140,7 +155,7 @@ footer {
   margin-top: 10px;
 }
 
-/* Table styling */
+/* || Table styling */
 
 table {
   width: 100%;
@@ -148,10 +163,17 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
+caption {
+  font-weight: bold;
   padding: 10px;
 }
 
+th,
+td {
+  padding: 10px;
+}
+
+th,
 td {
   text-align: center;
 }
@@ -164,18 +186,25 @@ tbody tr:nth-child(odd) {
   background-color: #def;
 }
 
-/* styling content images and audio */
+/* || Images and audio */
 
-img, audio {
+img,
+audio {
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 audio {
   width: 500px;
+  max-width: 100%;
 }
 
-/* Comments styling */
+/* || Comments styling */
 
 .comments {
   background-color: #def;
@@ -184,13 +213,15 @@ audio {
 
 .show-hide {
   cursor: pointer;
+  text-align: center;
+  width: 150px;
 }
 
-.comments font[size="6"] {
+.comments h2 {
   font-size: 2rem;
 }
 
-.comments font[size="6"]:nth-of-type(2) {
+.comments h2:nth-of-type(2) {
   margin-bottom: 0;
 }
 
@@ -214,18 +245,16 @@ audio {
   flex: 6;
 }
 
+.comment-form input,
+.comment-form label,
 .show-hide {
-  text-align: center;
-  width: 150px;
-}
-
-.comment-form input, .comment-form label, .show-hide {
   font-size: 1.6rem;
-  line-height: 32px;
+  min-height: 32px;
 }
 
-.comment-form input[type="submit"], .show-hide {
-  background: #333;
+.comment-form input[type="submit"],
+.show-hide {
+  background-color: #333;
   border: 0;
   color: white;
 }
@@ -252,4 +281,60 @@ audio {
 
 .comment-container li p:nth-child(2) {
   flex: 5;
+}
+
+/* || Keyboard focus accessibility */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #005fcc;
+  outline-offset: 3px;
+}
+
+/* || Responsive accessibility */
+
+@media (max-width: 800px) {
+  body {
+    width: 95%;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    width: 100%;
+  }
+
+  nav .search {
+    width: auto;
+    padding: 1em;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  article {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .comment-form .flex-pair {
+    flex-direction: column;
+    padding: 0 0 1rem;
+  }
+
+  .comment-form label {
+    text-align: left;
+  }
+
+  .comment-form input {
+    margin-left: 0;
+  }
+
+  .comment-form input[type="submit"] {
+    width: 100%;
+  }
 }
